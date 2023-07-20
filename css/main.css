@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100%;
+    background-color: #F3ACB1; /* color1a */ 
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: #5E578C;
+    border-radius: 9px;
+    padding: 2px;
+}
+a:hover {
+    color: black;
+    background-color: #ABA7C3;
+}
+.fundoColor1b {
+    background-color: #C46F76;
+}
+.fundoColor1c {
+    background-color: #FDE9EB;
+}
+.fundoColor2a {
+    background-color: #8781AD;
+}
+.fundoColor2b {
+    background-color: #5E578C;
+}
+.fundoColor2c {
+    background-color: #ABA7C3;
+}
+.fundoColor3a {
+    background-color: #F9EDB1;
+}
+.fundoColor3b {
+    background-color: #9F8400;
+}
+.fundoColor3c {
+    background-color: #FFF8D5;
+}
+.caixas {
+    min-height: 100px;
+/*    min-width: 100px; */
+}
+.centralizar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5%;
+}
+.centralizarFundo {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -15%);
+    padding: 5%;
+}
+.centralizarTopo {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    padding: 5%;
+}
+#central, #redesSociais {
+    margin: 20px 0;
+}
+#inferiorCentro {
+    padding: 20px 10px;
+}
+  @media screen and (max-width: 599px) {
+    .hidden-on-small {
+      display: none;
+    }
+  }
+  
