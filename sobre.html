@@ -1,41 +1,99 @@
 <!DOCTYPE html>
 <html>
     <head>
-     <!-- required meta tags-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
-    <title>Central Focus</title>
-    <!-- bootstrap css link-->
-    <!-- when acessing online external sources of bootstrap, remember to keep integrity attributes-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Projeto Bravíssimo</title>
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css/main.css" rel="stylesheet">
     </head>
     <body>
-        <!-- superior -->
-        <div class="d-flex container fundoRosa">
-            <div class="row col-12 justify-content-evenly">
-                <div class="caixas col-3 fundoColor2b" id="superiorEsquerdo">SE</div>
-                <div class="caixas col-6 fundoColor2a" id="superiorCentro">SC <br>
-                <a href="home.html">HOME</a></div>
-                <div class="caixas col-3 hidden-on-small fundoColor2c" id="superiorDireito">SD</div>
+        <nav class="navbar navbar-expand-md navbar-light ">
+            <div class="container shrink-on-small">
+            <a class="navbar-brand" href="index.html">
+                <span class="logo"> Bravíssimo <img src="images/logoRosa.png" alt="Bravíssimo"></span>
+            </a>
+              <button class="navbar-toggler btnMais" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                <span >Saiba mais</span>
+              </button>            
+              <div class="collapse navbar-collapse float-left" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                  <li class="btnLink nav-item"><a class="nav-link" href="index.html">Página inicial</a></li>
+                  <li class="btnLink nav-item active"><a class="nav-link" href="#">Sobre o projeto</a></li>
+                  <li class="btnLink nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+              </div>
             </div>
-        </div>
-        <!-- menu -->
-        <div class="d-flex container">
-            <div class="row col-12 justify-content-evenly">
-                <div class="caixas col-8 fundoColor1b" id="central">B</div>
+        </nav>
+        <section id="sobreBravissimo">
+            <div class="navbar navbar-expand-md navbar-light centralizar" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto hidden-on-small">
+                  <li class="btnLink nav-item"><a class="nav-link" data-target="#outroCarousel" data-slide-to="0">De que se trata?</a></li>
+                  <li class="btnLink nav-item"><a class="nav-link" data-target="#outroCarousel" data-slide-to="1">Por que fazemos?</a></li>
+                  <li class="btnLink nav-item"><a class="nav-link" data-target="#outroCarousel" data-slide-to="2">Como funciona?</a></li>
+                  <li class="btnLink nav-item"><a class="nav-link" data-target="#outroCarousel" data-slide-to="3">Quem está envolvido?</a></li>
+                </ul>
+              </div>
+              <br><br>
+           <div id="carrossel5perguntas" class="shade">
+           <div id="outroCarousel" class="carousel slide" data-ride="carousel">
+<!--                <ul class="carousel-indicators">
+                <li data-target="#outroCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#outroCarousel" data-slide-to="1"></li>
+                <li data-target="#outroCarousel" data-slide-to="2"></li>
+                <li data-target="#outroCarousel" data-slide-to="3"></li>
+                </ul>
+                    --><div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div id="what">
+                            <p>Explicação. <br> What.</p>
+                            <p>Fonte de consulta.</p>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div id="why">
+                            <p>Texto informativo 2. <br> Why.</p>
+                            <p>Fonte de consulta.</p>
+                            </div>
+                      </div>
+                      <div class="carousel-item">
+                          <div id="how">
+                            <p>Texto informativo 3. <br> How.</p>
+                            <p>Fonte de consulta.</p>
+                          </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div id="who">
+                          <p>Texto informativo 3. <br> Who.</p>
+                          <p>Fonte de consulta.</p>
+                        </div>
+                    </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#outroCarousel" data-slide="prev">
+                      <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#outroCarousel" data-slide="next">
+                      <span class="carousel-control-next-icon"></span>
+                    </a>
+                  </div>
             </div>
+          </section>
+        <section id="indomitas">
+            <div class="caixas logoIndomitas" id="inferiorDireito"><img id="indomitas" src="images/indomitasFundoCinza.png" alt="logo Indômitas">
         </div>
-        <!-- principal -->
-        <div class="d-flex container">
-            <div class="row col-12 justify-content-evenly">
-                <div class="caixas col-10 fundoColor3a" id="inferiorCentro">IC</div>
-            </div>
-        </div>
-        <!-- bootstrap javascript links with popper and jquery-->
-     <!-- when acessing online external sources of bootstrap, remember to keep integrity attributes-->
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/jquery-3.0.0.min.js"></script>
-    <!-- end of links -->
+        </section>
+    <footer>
+        <div id="inferiorEsquerdo">
+        <p style="color: #FFF;">Desenvolvimento HTML/CSS por Adriana Coelho</p>
+        <hr>
+    </div>
+    </footer>
+
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     </body>
 </html>

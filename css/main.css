@@ -1,22 +1,83 @@
 * {
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 body {
+    background: url(../images/bgHiphop.png), url(../images/bgDesembolo_transparente.png),
+    linear-gradient(150deg,#f3acb2,#FFFFFF);
+    background-attachment: fixed;
+/*    background-size: contain; */
     height: 100%;
-    background-color: #F3ACB1; /* color1a */ 
+    padding-top: 50px;
+    margin: auto;
 }
-a {
+ul, li {
     text-decoration: none;
-    color: white;
+    list-style: none;
+    display: inline-block;
+}
+.navbar {
+    margin-left: -10%;
+    margin-right: -10%;
+    padding: 10px;
+}
+.logo {
+    color: transparent;
+}
+.logo img {
+    border-radius: 10px;
+    width: 240px;
+    margin-left: -30%;
+    transform: rotate(-30deg);
+}
+.btnLink {
+    display: block;
+    margin: 0.6em 0;
+    padding: 3px 2px;
+    width: 120px;
+    font-size: 0.8em;
+    z-index: 1;
+}
+.btnLink a {
+    text-decoration: none;
     font-weight: bold;
-    background-color: #5E578C;
+    background-color: #FDE9EB;
     border-radius: 9px;
     padding: 2px;
+    border: solid 2px #5E578C;
+    justify-content: center;
 }
-a:hover {
-    color: black;
+.btnLink a:hover, .btnMais a:hover {
     background-color: #ABA7C3;
+    /* border: solid 2px #C46F76; */
+}
+.btnMais {
+    background-color: #ABA7C3;
+    border-radius: 9px;
+    padding: 0.4em;
+    border: solid 2px #5E578C;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+#inferiorDireito img {
+    width: 120px;
+}
+#superiorCentro img {
+    width: 100%;
+    padding: auto;
+}
+#informativo {
+    width: 40%;
+    float: right;
+}
+#sobreBravissimo {
+    width: 100%;
+    clear: both;
+}
+#sobreBravissimo .nav-link {
+    height: 50px;
+    margin-top: 100px;
 }
 .fundoColor1b {
     background-color: #C46F76;
@@ -44,15 +105,27 @@ a:hover {
 }
 .caixas {
     min-height: 100px;
-/*    min-width: 100px; */
 }
-.centralizar {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 5%;
+.blocoNotas {
+    min-width: 240px;
+    height: 240px; 
+    padding: 10px 5px 10px 25px;
+    background: #5E578C url(../images/mulher_megafone.png) fixed no-repeat;
+    background-size: contain;
+    border-radius: 12px;
 }
+.notas {
+    text-align: justify;
+    font-size: 0.8em;
+    margin: auto;
+}
+.fonte {
+    font-style: italic;
+    font-size: 0.6em;
+    color: #5E578C;
+    text-align: end;
+}
+
 .centralizarFundo {
     position: absolute;
     top: 75%;
@@ -62,9 +135,18 @@ a:hover {
 }
 .centralizarTopo {
     position: absolute;
-    top: 5%;
+    z-index: 2;
+ /*   top: 5%;
     left: 50%;
     transform: translate(-50%, -20%);
+  */  padding: 5%;
+    margin-top: 20px;
+}
+.centralizar {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-30%, -50%);
     padding: 5%;
 }
 #central, #redesSociais {
@@ -73,9 +155,119 @@ a:hover {
 #inferiorCentro {
     padding: 20px 10px;
 }
-  @media screen and (max-width: 599px) {
+#superiorCentro {
+    min-width: 240px;
+}
+#superiorDireito {
+    padding: 20px 20px;
+    width: 33%;
+    opacity: 0.7;
+}
+#superiorEsquerdo {
+    align-items: center;
+    text-align: center;
+}
+#inferiorDireito {
+    padding: 20px 10px;
+    position: relative;
+    vertical-align: bottom;
+}
+.descricao {
+    background-color: #FFFFFF70;
+    align-items: center;
+    text-align: center;
+    float: left;
+    border-radius: 20px; 
+    width: 50%;
+    margin: 90px 25px 15px 50px;
+    padding: 25px 25px 0 25px;
+    transform: rotate(-30deg);
+}
+#indomitas {
+    clear: both;
+    float: right;
+}
+#indomitas img{
+border-radius: 0 20%;
+}
+#inferiorEsquerdo {
+    clear: both;
+    float: left;
+    vertical-align: bottom;
+    padding-left: 20px;
+    font-size: 0.7em;
+}
+  @media screen and (max-width: 769px) {
     .hidden-on-small {
       display: none;
     }
+    .expand-on-small {
+        width: 100%;
+    }
+    .shrink-on-small {
+        margin-left: 5px; 
+        padding: auto;
+    }
+    .shrink-on-small img {
+        border-radius: 10px;
+        width: 240px;
+    }
+    .navbar {
+        margin-left: 0;
+    }
+    .logo img, .descricao {
+        transform: none;
+    }
+    #descricao {
+        width: 100%;
+        margin: auto;
+    }
+    .descricao {
+        width: 80%;
+    }
+    #indomitas, #informativo {
+        float: none;
+    }
+    .linhas {
+        display: inline;
+    }
+    .linhas img{
+        width: 70%;
+    }
   }
-  
+#card1, #card2, #card3 {
+    background: url("../images/mulher_megafone.png") no-repeat;
+    background-size: contain;
+    margin: auto;
+    height: 200px;
+    width: 300px;
+    border-radius: 12px;
+}
+#what, #why, #how, #who {
+    background: rgb(255, 255, 255, 0.8);
+    margin: auto;
+    height: 200px;
+    width: 80%;
+    border-radius: 24px;
+}
+#formularioEmail {
+    background: rgb(255, 255, 255, 0.8);
+    margin: 50px auto auto auto;
+    height: 320px;
+    width: 60%;
+    border-radius: 24px;
+}
+#carrosselTextos {
+    margin: auto;
+    width: 400px;
+    text-align: center;
+}
+#carrossel5perguntas {
+    margin: 50px auto auto auto;
+    width: 90%;
+    text-align: justify;
+}
+.carousel-indicators {
+/*    background-color: aqua; */
+    position: relative;
+}
