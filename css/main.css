@@ -20,6 +20,11 @@ a {
     text-decoration: none;
     color: #FFFFFF;
 }
+.carousel-item a{
+    text-decoration: none;
+    color: #f3acb2;
+    font-weight: bold;
+}
 .navbar {
     margin-left: 10%;
     margin-right: 10%;
@@ -69,6 +74,39 @@ a {
     font-size: larger;
     font-weight: bolder;
 }
+ .expand-on-small {
+    display: none;
+} 
+.carousel-indicators li{
+    min-width:30px;
+    min-height:30px;
+    -ms-flex:none ;
+    flex: auto;
+    border-radius: 50%;
+    cursor:pointer;
+    background-color:#f3acb2;
+    background-clip:padding-box;
+    border: 3px solid #555555;
+    text-indent: 0;
+    font-size: 0.8em;
+    margin: auto;
+}
+.carousel-indicators {
+/*    position:absolute; */
+    right:50%;
+    top: 2%;
+    left:50%;
+    bottom: auto;
+}
+.carousel-inner {
+    width: 90%;
+    border: 2px solid #f3acb2;
+    margin: auto;
+    text-align: start;
+    background-color: #FDE9EB;
+    padding: 8%;
+    border-radius: 10%;
+}
 #creditos {
     clear: both; 
     float: right;
@@ -98,6 +136,14 @@ width: 30%;
     width: 90%;
     border-radius: 24px;
 }
+#submenu img{
+    display: inline;
+    width: 20%;
+}
+#submenu img:checked{
+    display: inline;
+    width: 80%;
+}
 footer {
     clear: both;
     float: right;
@@ -109,6 +155,11 @@ footer {
 #comment {
 width: 100%;
 }
+#carrossel5perguntas {
+    margin: auto;
+    width: 90%;
+    text-align: justify;
+}
 @media screen and (max-width: 769px) {
     body {
         background: url(../images/bgWall_foto1Small.jpg) no-repeat bottom;
@@ -119,7 +170,7 @@ width: 100%;
       display: none;
     }
     .expand-on-small {
-        width: 100%;
+        display: inline;
     }
     .shrink-on-small {
         margin-left: 5px; 
@@ -154,6 +205,103 @@ width: 100%;
         border-radius: 20% 20% 0 20%;
         width: 40%;
   }
+  .carousel-indicators {
+        position:relative;
+        right:0%;
+        top: 0%;
+        left:0%;
+        bottom:0%;
+        width: 100%;
+        margin: auto;
+    }
+    .carousel-indicators li{
+        width: auto;
+        height: auto;
+        -ms-flex: auto;
+        flex: auto;
+        border-radius: 40%;
+        cursor:pointer;
+        background-color:#f3acb2;
+        background-clip:padding-box;
+        border: 1px solid #555555;
+        font-size: 0.6em;
+        margin: auto;
+        padding: 3px 3px;
+    }
+    .carousel-indicators li:hover{
+        background-color:#5E578C;
+    }
+}
+
+div.img img {
+    width: 80%;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Add Responsiveness */
+.responsive {
+    float: left; 
+    width: 24.99999%;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 80%; /* Full width */
+    /* overflow: auto; Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+}
+
+
+/* Add Animation */
+.modal-content {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Clear Floats */
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 /*
     .linhas {
