@@ -3,97 +3,183 @@
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" >
-    <title>Projeto Bravíssimo</title>
+    <title>Projeto Bravíssimo - Sobre o projeto</title>
    <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css/main.css" rel="stylesheet">
     </head>
-    <body>
-        <nav class="navbar navbar-expand-md navbar-light ">
-            <div class="container shrink-on-small">
-            <a class="navbar-brand" href="index.html">
-                <span class="logo"> Bravíssimo <img src="images/logoRosa.png" alt="Bravíssimo"></span>
-            </a>
-              <button class="navbar-toggler btnMais" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-                <span >Saiba mais</span>
-              </button>            
-              <div class="collapse navbar-collapse float-left" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                  <li class="btnLink nav-item"><a class="nav-link" href="index.html">Página inicial</a></li>
-                  <li class="btnLink nav-item active"><a class="nav-link" href="#">Sobre o projeto</a></li>
-                  <li class="btnLink nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
-                </ul>
-              </div>
-            </div>
-        </nav>
+    <body style="background: url(images/bgWall.jpg), linear-gradient(#555555,#f3acb2); background-attachment: fixed; height: 100%; padding: 1%; background-size: cover; ">
+      <nav class="navbar navbar-expand-md navbar-light ">
+        <div class="container shrink-on-small">
+        <a class="navbar-brand" href="index.html">
+           <img src="images/bravissimoLogo.png" alt="Logo Bravíssimo" style="width: 100%;"> <span class="logo"> Bravíssimo </span>
+        </a>
+          <button class="navbar-toggler btnMais" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span >Clique para saber mais</span>
+          </button>            
+          <div class="collapse navbar-collapse float-left" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="btnLink nav-item"><a class="nav-link" href="index.html">Página inicial</a></li>
+              <li class="btnLink nav-item  active"><a class="nav-link" href="sobre.html">Sobre o projeto</a></li>
+              <li class="btnLink nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
         <section id="sobreBravissimo">
-            <div class="navbar navbar-expand-md navbar-light centralizar" id="navbarSupportedContent">
+            <div class="navbar navbar-expand-md navbar-light" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto hidden-on-small">
                   <li class="btnLink nav-item"><a class="nav-link" data-target="#outroCarousel" data-slide-to="0">De que se trata?</a></li>
                   <li class="btnLink nav-item"><a class="nav-link" data-target="#outroCarousel" data-slide-to="1">Por que fazemos?</a></li>
                   <li class="btnLink nav-item"><a class="nav-link" data-target="#outroCarousel" data-slide-to="2">Como funciona?</a></li>
                   <li class="btnLink nav-item"><a class="nav-link" data-target="#outroCarousel" data-slide-to="3">Quem está envolvido?</a></li>
+                  <li class="btnLink nav-item"><a class="nav-link" data-target="#outroCarousel" data-slide-to="4">Galeria de imagens</a></li>
                 </ul>
               </div>
-              <br><br>
-           <div id="carrossel5perguntas" class="shade">
-           <div id="outroCarousel" class="carousel slide" data-ride="carousel">
-<!--                <ul class="carousel-indicators">
-                <li data-target="#outroCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#outroCarousel" data-slide-to="1"></li>
-                <li data-target="#outroCarousel" data-slide-to="2"></li>
-                <li data-target="#outroCarousel" data-slide-to="3"></li>
-                </ul>
-                    --><div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <div id="what">
-                            <p>Explicação. <br> What.</p>
-                            <p>Fonte de consulta.</p>
-                          </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div id="why">
-                            <p>Texto informativo 2. <br> Why.</p>
-                            <p>Fonte de consulta.</p>
-                            </div>
-                      </div>
-                      <div class="carousel-item">
-                          <div id="how">
-                            <p>Texto informativo 3. <br> How.</p>
-                            <p>Fonte de consulta.</p>
-                          </div>
-                      </div>
-                      <div class="carousel-item">
-                        <div id="who">
-                          <p>Texto informativo 3. <br> Who.</p>
-                          <p>Fonte de consulta.</p>
-                        </div>
-                    </div>
-                    </div>
-                    <a class="carousel-control-prev" href="#outroCarousel" data-slide="prev">
-                      <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#outroCarousel" data-slide="next">
-                      <span class="carousel-control-next-icon"></span>
-                    </a>
+              <!-- carrossel -->
+           <div id="carrossel5perguntas">
+            <div id="outroCarousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                  <ul class="carousel-indicators expand-on-small">
+                      <li data-target="#outroCarousel" data-slide-to="0" class="active">O quê?</li>
+                      <li data-target="#outroCarousel" data-slide-to="1">Por quê?</li>
+                      <li data-target="#outroCarousel" data-slide-to="2">Como?</li>
+                      <li data-target="#outroCarousel" data-slide-to="3">Quem?</li>
+                      <li data-target="#outroCarousel" data-slide-to="4">Galeria</li>
+                  </ul><br>
+                <div class="carousel-item">
+                  <div id="what">
+                    <p>Bravíssimo é um projeto de temática de masculinidades nos espaços de socioeducação. O que se pretende é um trabalho com adolescentes homens institucionalizados em Minas Gerais, e participar ativamente da capacitação de pessoas para esse trabalho, de maneira contínua. Também se propõe apresentar a possibilidade de integrar o tema masculinidades às políticas públicas de enfrentamento à violência e à criminalidade, trazendo à arena dos debates públicos a discussão sobre a socialização masculina, que aproxima os homens de um interminável ciclo de violência.</p>
                   </div>
-            </div>
-          </section>
-        <section id="indomitas">
-            <div class="caixas logoIndomitas" id="inferiorDireito"><img id="indomitas" src="images/indomitasFundoCinza.png" alt="logo Indômitas">
-        </div>
-        </section>
-    <footer>
-        <div id="inferiorEsquerdo">
-        <p style="color: #FFF;">Desenvolvimento HTML/CSS por Adriana Coelho</p>
-        <hr>
-    </div>
-    </footer>
+                </div>
+                <div class="carousel-item">
+                  <div id="why">
+                    <p><em> No ano em estudo foram encaminhados para o CIABH, 3054 casos para atendimento. (…) 1848 adolescentes – considerados individualmente – foram encaminhados como autores, em tese, de atos infracionais. Destes novos casos, 1000 dizem respeito à reentrada de adolescentes (reincidência). (…)
+                      Os autores de atos infracionais são, de forma exponencial, do sexo masculino, com idade entre 16 e 17 anos.” (CIABH, 2022, p. 9 e p. 12) </em></p>
+                    <p>Nos ronda a reflexão: <strong> por que homens?</strong> Para além de todos os fatores econômicos, sociais e raciais que contribuem com os altos índices de criminalidade, o que há na socialização masculina que os torna mais próximos desse interminável ciclo de violência? Ao tratar homens como seres “naturalmente” mais impulsivos, exigindo deles uma contínua afirmação de masculinidade, virilidade, desde a mais tenra idade, submetendo-os ainda a condições de vulnerabilidade social, obstando acesso à educação, cultura e cidadania, como não esperar altos índices de violência? <br>E  por que o tema masculinidades, em regra, não integra as políticas públicas de enfrentamento à violência e à criminalidade? Diante dos dados expressivos sobre a relação dos homens com a violência, nos parece inevitável considerar o gênero e as masculinidades como categorias determinantes para se pensar todas as políticas públicas de prevenção à criminalidade.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div id="how">
+                    <p>Trabalhando com a realidade do adolescente, dentro da <em>“quebrada”</em> dele, dentro das possibilidades dele, construímos juntas e juntos, caminhos para o enfrentamento à criminalidade. Não existe neste trabalho uma idealização do adolescente típico: em realidade, ele fuma, bebe, mora e tem seus laços construídos na <em>“biqueira”</em>, não se vê acolhido na escola, frequenta bailes e tem relacionamentos amorosos adultos. Também não se idealizam as instituições que deveriam garantir seus direitos, mas não garantem. A realidade e sua complexidade deve ser evidenciada, para a construção de uma consciência crítica do adolescente. <br>
+                    A partir do diálogo aberto e da construção pedagógica, as oficinas sobre as masculinidades, que mobilizam discussões com adolescentes homens em cumprimento de medida socioeducativa, vão sendo guiadas para ligar a pauta às realidades dos participantes, suas expectativas e concepções prévias. São propostos os temas e daí o trabalho dos Educadores Sociais é lançar perguntas que motivem a reflexão do participante. Na perspectiva da educação como prática para a emancipação e liberdade, é essencial que o próprio adolescente enxergue a realidade em que está inserido e pense estratégias para a quebra do vínculo com a criminalidade, caso assim deseje. O papel principal do Educador Social é instigar o debate, potencializar falas e masculinidades muitas vezes escondidas por trás de ideais machistas, violentos, trazendo à tona uma multiplicidade de personalidades e existências possíveis.</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div id="how">
+                    <p>Essa é uma iniciativa da <a href="https://www.indomitascoletivafeminista.org.br/">Indômitas Coletiva Feminista</a>, com liderança de <a href="https://www.instagram.com/iza_bravissima/"> Izabela Miranda</a>. <br>Sua atuação se dá nas instituições da região metropolitana de Belo Horizonte, especialmente dentro da Subsecretaria de Atendimento às Medidas Socioeducativas (SUASE) e da Vara Infracional da Infância e da Juventude. </p>
+                  </div>
+                </div>
 
+                
+                <div class="carousel-item active">
+                  <div id="galeriaFotos">
+                    <h2 style="text-align:center">Galeria de Fotos</h2>
+
+<div class="responsive">
+  <div class="img">
+      <img src="images/galeria01.jpg" alt="descrever">
+  </div>
+</div>
+<div class="responsive">
+  <div class="img">
+      <img src="images/galeria02.jpg" alt="descrever">
+  </div>
+</div>
+<div class="responsive">
+  <div class="img">
+      <img src="images/galeria03.jpg" alt="descrever">
+  </div>
+</div>
+<div class="responsive">
+  <div class="img">
+      <img src="images/galeria04.jpg" alt="descrever">
+  </div>
+</div>
+<div class="responsive">
+  <div class="img">
+      <img src="images/galeria05.jpg" alt="descrever">
+  </div>
+</div>
+<div class="responsive">
+  <div class="img">
+      <img src="images/galeria06.jpg" alt="descrever">
+  </div>
+</div>
+<div class="responsive">
+  <div class="img">
+      <img src="images/galeria07.jpg" alt="descrever">
+  </div>
+</div>
+<div class="responsive">
+  <div class="img">
+      <img src="images/galeria08.jpg" alt="descrever">
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">fechar</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#outroCarousel" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#outroCarousel" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="indomitas" id="indomitas">
+          <a href="https://www.indomitascoletivafeminista.org.br">
+            <img id="indomitas" src="images/indomitasBravissimo.png" alt="logo Indômitas">
+          </a>
+        </div>
+        <div id="creditos">
+          <p style="color: #FFF;">Desenvolvimento HTML/CSS por Adriana Coelho &copy;2023</p>
+          <hr>
+        </div>
+      </footer>
  <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+      // Get the modal
+      var modal = document.getElementById('myModal');
+      
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+      
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() { 
+          modal.style.display = "none";
+      }
+      
+      // Get all images and insert the clicked image inside the modal
+      // Get the content of the image description and insert it inside the modal image caption
+      var images = document.getElementsByTagName('img');
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      var i;
+      for (i = 0; i < images.length; i++) {
+         images[i].onclick = function(){
+             modal.style.display = "block";
+             modalImg.src = this.src;
+             modalImg.alt = this.alt;
+             captionText.innerHTML = this.nextElementSibling.innerHTML;
+         }
+      }
+      </script>
     </body>
 </html>
